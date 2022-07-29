@@ -1,6 +1,7 @@
-import logo from './logo.svg';
+import {Route,Routes} from "react-router-dom"
 import './App.css';
 import Navbar from './pages/Navbar';
+import Home from './pages/Home';
 
 function App() {
   return (
@@ -8,7 +9,9 @@ function App() {
       <Navbar/>
 
 
-
+    <Routes>
+      <Route path="/" element={<Home />}/>
+    </Routes>
     
     </h1>
   );
