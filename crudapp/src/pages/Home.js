@@ -1,5 +1,6 @@
 import axios from "axios"
 import React, { useEffect, useState } from 'react'
+import {Link} from "react-router-dom"
 
 function Home() {
 
@@ -57,9 +58,9 @@ function Home() {
                                                 {user.phone}
                                             </td>
                                             <td className="flex justify-center items-center text-sm flex space-x-4 mt-1">
-                                                <button className='px-6 py-2 text-white bg-black rounded-lg'>
+                                                <Link to={`/users/${user.id}`} className='px-6 py-2 text-white bg-black rounded-lg'>
                                                     View
-                                                </button>
+                                                </Link>
                                                 <button className='px-6 py-2 text-white bg-blue-600 rounded-lg'>
                                                     Edit
                                                 </button>
