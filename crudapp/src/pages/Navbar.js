@@ -1,12 +1,13 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 
 function Navbar() {
     return (
         <div className='w-full h-16 bg-blue-600 flex items-centre px-10 py-2 justify-between'>
 
-            <h1 className='text-white text-3xl font-semibold font-Monteserrat'>Crud App</h1>
+            <Link to="/" className='text-white text-3xl font-semibold font-Monteserrat'>Crud App</Link>
 
-            <button className='w-48 bg-white text-blue-300 font-semibold text-xl h-12 rounded-lg'>Add Users</button>
+            <Link to="/add-user" className='w-48 bg-white text-blue-400 flex justify-center items-center font-semibold text-xl h-12 rounded-lg'>Add Users</Link>
 
         </div>
     )
