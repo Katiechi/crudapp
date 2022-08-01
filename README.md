@@ -5,7 +5,7 @@ Brian Ambundo Katiechi
 
 # Livesite link
 
-https://62e77e0b07f3240594851263--stunning-cucurucho-60df43.netlify.app/
+https://crud-app-01.herokuapp.com/
 
 # Description
 The following app is a CRUD app that uses a local server to communicate to an api. The app enables one to view,edit and delete personal information data which includes name, email and phone number
