@@ -1,4 +1,10 @@
 # crudapp
+
+# author
+Brian Ambundo Katiechi
+
+# Description
+The following app is a CRUD app that uses a local server to communicate to an api. The app enables one to view,edit and delete personal information data which includes name, email and phone number
 # How to set-up the App
 
 # npm install axios
