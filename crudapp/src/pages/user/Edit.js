@@ -1,5 +1,8 @@
 import React,{useState} from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
+import axios from 'axios'
+import { useParams } from 'react-router-dom'
 
 function Edit() {
 
@@ -8,6 +11,31 @@ function Edit() {
   const [phone,setPhone] = useState("")
 
   const navigate = useNavigate()
+  const { id } = useParams()
+
+ 
+  useEffect(() => {
+      axios.get(`http://localhost:3003/users/${id}`)
+          .then((res) => {
+              setName(res.data.name)
+              setEmail(res.data.email)
+              setPhone(res.data.phone)
+          })
+  }, [])
+
+  const data={
+    name:name,
+    email:email,
+    phone:phone
+  }
+ 
+
+ function Update(e){
+   e.preventDefault()
+  axios.put(`http://localhost:3003/users/${id}`,data)
+  .then(navigate("/"))
+ }
+
   return (
 
     
@@ -32,8 +60,8 @@ function Edit() {
         type="phone" placeholder="Enter your phone" className="w-[80%] mt-4 text-xl font-normal py-4 pl-6 outline-none border border-zinc-400"/>
 
         <button
-        //onClick={Submit}
-         className="w-[80%] mt-4 bg-blue-600 text-white text-xl font-normal py-4 pl-6  border "> Add User</button>
+        onClick={Update}
+         className="w-[80%] mt-4 bg-blue-600 text-white text-xl font-normal py-4 pl-6  border "> Update User</button>
 
 
       </form>

@@ -75,9 +75,9 @@ function Home() {
                                                 <Link to={`/users/${data.id}`} className='px-6 py-2 text-white bg-black rounded-lg'>
                                                     View
                                                 </Link>
-                                                <button  className='px-6 py-2 text-white bg-blue-600 rounded-lg'>
+                                                <Link to={`/edit-user/${data.id}`} className='px-6 py-2 text-white bg-blue-600 rounded-lg'>
                                                     Edit
-                                                </button>
+                                                </Link>
                                                 <button onClick={()=>Delete(data.id)} className='px-6 py-2 text-white bg-red-600 rounded-lg'>
                                                     Delete
                                                 </button>
