@@ -17,7 +17,7 @@ function Home() {
 
     useEffect(() => {
      loadUsers()
-    }, [])
+    }, [users])
 
 
     function Delete(id){
