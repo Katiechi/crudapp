@@ -9,7 +9,7 @@ function Home() {
     useEffect(() => {
         axios.get("http://localhost:3003/users")
             .then((res) => {
-                setUsers(res.data)
+                setUsers(res.data.reverse())
             })
     }, [])
 
