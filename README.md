@@ -1,5 +1,15 @@
 # crudapp
-# Getting Started with Create React App
+# How to set-up the App
+
+# npm install axios
+Before loading the project install axios to enable the app to fetch data from the db.json file
+
+# npm run json-server
+Open another terminal and run the json server
+
+# npm start
+
+Finally open another terminal and run the app by using the command npm start
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
