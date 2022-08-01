@@ -4,6 +4,7 @@ import Navbar from './pages/Navbar';
 import Home from './pages/Home';
 import User from "./pages/user/User";
 import AddUser from "./pages/user/AddUser";
+import Edit from "./pages/user/Edit";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Route path="/" element={<Home />}/>
       <Route path="/users/:id" element={<User />}/>
       <Route path="/add-user" element={<AddUser />}/>
-      <Route path="/" element={<Home />}/>
+      <Route path="/edit-user" element={<Edit />}/>
     </Routes>
     
     </h1>

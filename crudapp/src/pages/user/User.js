@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function User() {
 
@@ -39,6 +40,8 @@ function User() {
 
 
             )}
+
+            <Link to="/" className='text-black text-2xl'>Back to Home</Link>
         </div>
     )
 }
